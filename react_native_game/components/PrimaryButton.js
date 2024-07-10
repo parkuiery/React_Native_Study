@@ -1,10 +1,11 @@
-import { Children } from "react";
 import { View, Text } from "react-native";
+import React from "react";
 
-function PrimaryButton({ childeren }) {
+
+function PrimaryButton({ children }) {
     return (
         <View>
-            <Text>{Children}</Text>
+            <Text>{children}</Text>
         </View>
     );
 }
