@@ -19,13 +19,16 @@ function GoalInput(props) {
           style={styles.textInput}
           placeholder='Your course goal!'
           onChangeText={goalInputHander}
+          value={enteredGoalText}
         />
         <Button title='Add Goal' onPress={addGoalHandler}></Button>
       </View>
     )
 }
 
-const style = StyleSheet.create({
+export default GoalInput;
+
+const styles = StyleSheet.create({
     inputContainer: {
         flex: 1,
         flexDirection: "row",

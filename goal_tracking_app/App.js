@@ -11,7 +11,7 @@ export default function App() {
     console.log(enteredGoalText);
     setCourseGoals((currentCourseGoals) => [
       ...currentCourseGoals,
-      { text: enteredGoalText, id: Math.random().toString }
+      { text: enteredGoalText, id: Math.random().toString() }
     ]);
   }
 
